@@ -1,0 +1,36 @@
+.prescriptions-page {
+  width: 100%;
+}
+
+.prescriptions-page h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 32px;
+}
+
+.empty-prescriptions {
+  text-align: center;
+  padding: 64px 32px;
+  color: var(--gray-600);
+}
+
+.empty-prescriptions p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.prescriptions-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.prescription-card {
+  background: var(--gray-50);
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid var(--gray-200);
+}
+
+

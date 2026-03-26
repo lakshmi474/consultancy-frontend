@@ -1,0 +1,66 @@
+.compliance-page {
+  padding: 64px 0;
+  min-height: 100vh;
+}
+
+.compliance-page h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.compliance-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 48px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.compliance-content section {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.compliance-content section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.compliance-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 16px;
+}
+
+.compliance-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--gray-700);
+}
+
+@media (max-width: 768px) {
+  .compliance-page {
+    padding: 32px 0;
+  }
+
+  .compliance-page h1 {
+    font-size: 28px;
+  }
+
+  .compliance-content {
+    padding: 24px;
+  }
+
+  .compliance-content h2 {
+    font-size: 20px;
+  }
+}
+
+

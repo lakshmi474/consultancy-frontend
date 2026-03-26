@@ -1,0 +1,68 @@
+.admin-orders {
+  width: 100%;
+}
+
+.admin-orders h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 32px;
+}
+
+.orders-table {
+  overflow-x: auto;
+}
+
+.orders-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.orders-table th {
+  background: var(--gray-50);
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.orders-table tr:hover {
+  background: var(--gray-50);
+}
+
+.status-select {
+  padding: 6px 12px;
+  border: 2px solid var(--gray-200);
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.no-orders {
+  text-align: center;
+  padding: 32px;
+  color: var(--gray-600);
+}
+
+.btn-edit {
+  padding: 6px 12px;
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-edit:hover {
+  background: #16a34a;
+}
+
+

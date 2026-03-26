@@ -1,0 +1,258 @@
+.orders-page {
+  width: 100%;
+}
+
+.orders-page h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 32px;
+}
+
+.empty-orders {
+  text-align: center;
+  padding: 64px 32px;
+}
+
+.empty-orders p {
+  font-size: 18px;
+  color: var(--gray-600);
+  margin-bottom: 24px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.order-card {
+  background: var(--gray-50);
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid var(--gray-200);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.order-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+.order-date {
+  font-size: 14px;
+  color: var(--gray-600);
+  margin: 0;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--white);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.order-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-item-info {
+  flex: 1;
+}
+
+.order-item-info h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+.order-item-info p {
+  font-size: 14px;
+  color: var(--gray-600);
+  margin: 0;
+}
+
+.order-item-quantity {
+  margin-top: 4px;
+}
+
+.order-item-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 2px solid var(--gray-200);
+}
+
+.order-total {
+  font-size: 20px;
+  color: var(--gray-900);
+}
+
+.order-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.order-status-group {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.status-item small {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.order-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.delivery-est {
+  font-size: 14px;
+  color: var(--gray-600);
+  margin: 0;
+}
+
+.delivery-est strong {
+  color: var(--primary-green);
+}
+
+@media (max-width: 768px) {
+  .order-status-group {
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .status-item {
+    align-items: flex-start;
+  }
+}
+
+/* Tracking Timeline Styles */
+.tracking-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timeline-step {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.step-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20px;
+}
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--gray-300);
+  background: var(--white);
+  z-index: 2;
+}
+
+.circle.filled {
+  border-color: var(--primary-green);
+  background: var(--primary-green);
+}
+
+.circle.pulse {
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
+  animation: pulse-green 2s infinite;
+}
+
+.line {
+  width: 2px;
+  flex: 1;
+  background: var(--gray-200);
+  margin: 4px 0;
+}
+
+.timeline-step.active .line {
+  background: var(--primary-green);
+}
+
+.step-content {
+  padding-bottom: 24px;
+}
+
+.step-label {
+  margin: 0;
+  font-weight: 600;
+  color: var(--gray-400);
+  font-size: 15px;
+}
+
+.timeline-step.active .step-label {
+  color: var(--gray-900);
+}
+
+.step-date {
+  color: var(--gray-500);
+  font-size: 12px;
+}
+
+@keyframes pulse-green {
+  0% { box-shadow: 0 0 0 0px rgba(16, 185, 129, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0px rgba(16, 185, 129, 0); }
+}
+
+

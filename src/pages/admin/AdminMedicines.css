@@ -1,0 +1,118 @@
+.admin-medicines {
+  width: 100%;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.admin-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.medicines-table {
+  overflow-x: auto;
+}
+
+.medicines-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+.medicines-table th,
+.medicines-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.medicines-table th {
+  background: var(--gray-50);
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.medicines-table tr:hover {
+  background: var(--gray-50);
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.btn-edit {
+  background: #22c55e;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background: #16a34a;
+}
+
+.btn-delete {
+  background: var(--red);
+  color: var(--white);
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.modal-note {
+  color: var(--gray-600);
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .medicines-table {
+    font-size: 14px;
+  }
+}
+
+

@@ -1,0 +1,93 @@
+.footer {
+  background: var(--gray-900);
+  color: var(--gray-200);
+  padding: 48px 0 24px;
+  margin-top: 64px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-section h3 {
+  color: var(--white);
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.footer-section p {
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.license-info {
+  background: var(--gray-800);
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: var(--gray-300);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-section ul li a:hover {
+  color: var(--primary-blue);
+}
+
+.footer-disclaimer {
+  background: var(--gray-800);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  border-left: 4px solid var(--yellow);
+}
+
+.footer-disclaimer p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--gray-300);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--gray-800);
+  padding-top: 24px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin-bottom: 8px;
+  color: var(--gray-400);
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 32px 0 16px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-disclaimer {
+    padding: 16px;
+  }
+}
+
+

@@ -1,0 +1,36 @@
+.wishlist-page {
+  width: 100%;
+}
+
+.wishlist-page h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 32px;
+}
+
+.empty-wishlist {
+  text-align: center;
+  padding: 64px 32px;
+}
+
+.empty-wishlist p {
+  font-size: 18px;
+  color: var(--gray-600);
+  margin-bottom: 24px;
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+  }
+}
+
+
