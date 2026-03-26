@@ -143,10 +143,18 @@ const AdminPrescriptions = () => {
                         ))}
                       </td>
                       <td className="table-actions">
-                        <button className="btn btn-primary" onClick={() => updateStatus(p.id, 'Approved')}>
+                        <button 
+                          className="btn btn-primary" 
+                          onClick={() => updateStatus(p.id, 'Approved')}
+                          disabled={p.status !== 'Pending'}
+                        >
                           Approve
                         </button>
-                        <button className="btn btn-danger" onClick={() => updateStatus(p.id, 'Rejected')}>
+                        <button 
+                          className="btn btn-danger" 
+                          onClick={() => updateStatus(p.id, 'Rejected')}
+                          disabled={p.status !== 'Pending'}
+                        >
                           Reject
                         </button>
                       </td>

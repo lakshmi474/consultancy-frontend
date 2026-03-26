@@ -6,6 +6,18 @@ import './AdminPanel.css';
 // Order status options that admin can set
 const statusOptions = ['Confirmed', 'Processing', 'Ready', 'Out for Delivery', 'Delivered', 'Cancelled'];
 
+const getStatusClass = (status) => {
+  switch (status) {
+    case 'Confirmed': return 'info';
+    case 'Processing': return 'warning';
+    case 'Ready': return 'primary';
+    case 'Out for Delivery': return 'info';
+    case 'Delivered': return 'success';
+    case 'Cancelled': return 'danger';
+    default: return 'warning';
+  }
+};
+
 const AdminOrders = () => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
